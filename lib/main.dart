@@ -62,8 +62,11 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Acceso mediante Huella Digital'),
+      ),
       backgroundColor:
-          (_message == "Not Authorized") ? Colors.white38 : Colors.yellowAccent,
+          (_message == "Not Authorized") ? Colors.white : Colors.yellowAccent,
       body: Center(
         child: Container(
           child: Text("$_message",
